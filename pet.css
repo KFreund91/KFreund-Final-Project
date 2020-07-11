@@ -1,3 +1,20 @@
-body {
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fpurple-paw-print.html&psig=AOvVaw1PigqI7uFi0ZkXTETnLDbN&ust=1594584195896000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCICA55f_xeoCFQAAAAAdAAAAABAI");
-   }
+.hero {
+    position: relative;
+    height: 700git add .0px;
+    padding: 20px;
+    margin: 0;
+    background: black;
+    background-image: url("images/grey.jpg");
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+  }
+
+  .nav-paw {
+    position: sticky;
+    bottom: 15px;
+    left: 205px;
+    width: 25px;
+    color: white;
+  }
+
