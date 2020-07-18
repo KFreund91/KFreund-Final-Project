@@ -9,16 +9,16 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="model.css">
+    <link rel="stylesheet" href="../static/pet.css">
+    <title>PAWSitive Outcomes</title>
 
-    <title>Machine Learning Model</title>
 </head>
 
 <body>
     <!-- Navigation bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-info">
         <a class="navbar-brand" href="index.html">PAWSitive Outcomes
-            <img class="nav-paw" src="images/white-paw.svg">
+            <img class="nav-paw" src="../images/white-paw.svg">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,78 +40,44 @@
                         <a class="dropdown-item" href="feline.html">Feline Adoptions</a>
                     </div>
                 </li>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="model.html">Model</a>
-                </li>
-                <li class="nav-item">
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="links.html">Links</a>
-                </li>
-                <li class="nav-item">
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link" href="agnes.html">Agnes's Story</a>
-                </li>
+                  </li>
             </ul>
         </div>
     </nav>
 
-    <div class="p-3 mb-5 font-weight-bold bg-secondary text-white center">
-        <h1 class="text-center">Machine Learning Model</h1>
+    <div class = "hero text-center"> 
+        <h1>PAWSitive Outcomes:</h1>
+        <h3>Predicting Adoptions of Shelter Animals</h3>
+<br>
+<br>
+        <h4>Rationale</h4>
+    <p style = "margin-left: 315px; margin-right: 315px;">  According to Shelter Animals Count, in 2019 close to 4 million animals were taken by shelters across the United States. The mission of these shelters is to ensure the best possible
+        outcomes for these animals, which is most commonly adoption by a caring new owner. However, for many animals, a happy outcome can be difficult to achieve. So, what makes for 
+        the success of an animal to achieve a new "furever" home? To answer this question, a dataset of shelter intakes and outcomes from the Austin Animal Shelter was examined. This dataset was ideal because it 
+        documented intakes by individual in detail rather than a summary of intakes that is commonly reported by U.S. shelters. The data was cleaned using Python and the Pandas package. Intake and outcome 
+        statistics were then examined using tableau for felines and canines and patterns were noted. A machine learning model using Python, Pandas, Numpy, and Scikit-learn was then created from the cleaned data
+        with the goal of predicting adoption of shelter canines and felines. It is my hope that this study will help inform shelters and other rescue operations on how to best direct their efforts in ensuring adoptions for 
+        the animals they serve.
+    </p>
+
+    <br>
+    <img class = "dogcat" src="../images/dog-cat.jpg" alt="Dog-cat">
+
+ 
+    </div>
+    <div class="p-3 mb-2 bg-info text-dark"> 
+        <br>
     </div>
 
-    <div class="hero text-center">
 
-        <p style="margin-left: 200px; margin-right:200px;">
-            The goal of the model was to predict shelter animal adoptions. Although there were other outcomes listed in
-            the data set,
-            all other outcomes were changed to "not adopted" to simplify the model with consideration to what
-            information would be most helpful for a shelter.
-            The following variables were used in the creation of the model:
-            <br>
-        <ol class="text-left" style="margin-left:200px; margin-right:200px;">
-            <li>Primary breed</li>
-            <li>Sex</li>
-            <li>Age</li>
-            <li>Reason for intake</li>
-            <li>Condition at intake</li>
-            <li>Animal type</li>
-            <li>Length of stay in shelter</li>
-        </ol>
-
-        </p>
-        <br>
-
-        <p style="margin-left:200px; margin-right:200px;">
-            The data was numerically encoded using the Pandas "get dummies" function. I chose to use a Random Forest for
-            the model given the number of different variables included in
-            the dataset. A grid search was then performed to configure the optimal parameters. The classifcation report
-            created post-grid search is shown below:
-        </p>
-        <br>
-
-        <img class="classreport" src="images/classification_report.png" alt="Classification report">
-
-
-        <p style="margin-left:200px; margin-right:200px;">
-            <br>
-            Although the accuracy of the model is not extremely high, the model could still be useful for shelters and
-            rescue operations trying to determine the outcomes of rescued animals.
-        </p>
-
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-
-
-    </div>
-    <div class="p-3 mb-2 bg-info text-dark">
-        <br>
-    </div>
 
 
     <!-- Optional JavaScript -->
@@ -125,10 +91,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="model.css"></script>
-
+    <script src="../static/pet.css"></script>
 
 </body>
 

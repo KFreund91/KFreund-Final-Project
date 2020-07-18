@@ -4,7 +4,7 @@
     padding: 20px;
     margin: 0;
     background: black;
-    background-image: url("images/grey.jpg");
+    background-image: url("../images/grey.jpg");
     background-attachment: fixed;
     background-position: bottom center;
     background-size: cover;
