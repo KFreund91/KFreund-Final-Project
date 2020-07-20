@@ -13,3 +13,9 @@
         border: solid;
         border-color: black; 
     }
+
+    .features {
+      bottom: 15px;
+        left: 205px;
+        width: 350px;
+    }

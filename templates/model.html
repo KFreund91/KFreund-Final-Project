@@ -17,7 +17,7 @@
 <body>
     <!-- Navigation bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-info">
-        <a class="navbar-brand" href="index.html">PAWSitive Outcomes
+        <a class="navbar-brand" href="../index.html">PAWSitive Outcomes
             <img class="nav-paw" src="../images/white-paw.svg">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -60,14 +60,14 @@
 
     <div class="hero text-center">
 
-        <p style="margin-left: 200px; margin-right:200px;">
+        <p style="margin-left: 200px; margin-right:200px; font-size: larger;">
             The goal of the model was to predict shelter animal adoptions. Although there were other outcomes listed in
             the data set,
             all other outcomes were changed to "not adopted" to simplify the model with consideration to what
             information would be most helpful for a shelter.
             The following variables were used in the creation of the model:
             <br>
-        <ol class="text-left" style="margin-left:200px; margin-right:200px;">
+        <ol class="text-left" style="margin-left:200px; margin-right:200px; font-size: larger;">
             <li>Primary breed</li>
             <li>Sex</li>
             <li>Age</li>
@@ -80,30 +80,32 @@
         </p>
         <br>
 
-        <p style="margin-left:200px; margin-right:200px;">
+        <p style="margin-left:200px; margin-right:200px; font-size: larger;">
             The data was numerically encoded using the Pandas "get dummies" function. I chose to use a Random Forest for
             the model given the number of different variables included in
             the dataset. A grid search was then performed to configure the optimal parameters. The classifcation report
             created post-grid search is shown below:
         </p>
         <br>
+        
 
-        <img class="classreport" src="../images/classification_report.png" alt="Classification report">
+        <img class="classreport" src="../images/classification_report.png" alt="Classification report"> 
 
-
-        <p style="margin-left:200px; margin-right:200px;">
+        <p style="margin-left:200px; margin-right:200px; font-size: larger;">
             <br>
-            Although the accuracy of the model is not extremely high, the model could still be useful for shelters and
-            rescue operations trying to determine the outcomes of rescued animals.
+            A report of feature importances was also created to determine which feature(s) had the greatest impact. It can be seen that the scores of 
+            each features were very low suggesting there was not a feature having a significant influence on the model.
+        </p>
+        <img class="features" src="../images/features.PNG" alt="Features report"> 
+
+
+        <p style="margin-left:200px; margin-right:200px; font-size: larger;">
+            <br>
+            Although the accuracy of the model is not extremely high, it can be concluded that the model could still be useful for shelters and
+            rescue operations trying to determine the outcomes of rescued animals. 
         </p>
 
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+<br>
 
 
 
